@@ -14,15 +14,15 @@ pipeline {
         }
         
 
-        stage ("Run Python Calculator") {
+        stage ("Build") {
             steps {
-               sh python calculator.py
+               sh "./python calculator.py"
             }
         }
 
         stage ("Unit Test") {
             steps {
-               sh python test_calculator.py
+               sh "./python test_calculator.py"
             }
         }
 
