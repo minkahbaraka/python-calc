@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage ("Checkout") {
             steps {
-                git url: 'https://github.com/minkahbaraka/calc.git'
+                git url: 'https://github.com/minkahbaraka/python-calc.git'
             }
         }
         
